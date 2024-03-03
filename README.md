@@ -13,10 +13,10 @@ Implement the State pattern to improve code maintainability and flexibility:
 2. Implement State Interface: Define an interface AccountState with methods for common actions like deposit, withdraw, activate, suspend, and close.<br/>
 3. Implement State Behaviors: Each concrete state class implements the AccountState interface, providing specific behavior for its respective state. For example, the ActiveState class would allow deposits and withdrawals, while the ClosedState wouldn't allow any transactions.<br/>
 4. Update Account Class:
-<li>Include attributes for accountNumber and balance.</li>
-<li>Remove state-specific logic from the Account class.</li>
-<li>Introduce a reference to the current AccountState object.</li>
-<li>Delegate actions like deposit, withdraw, activate, suspend, and close to the current state object through its corresponding methods.</li>
+   <li>Include attributes for accountNumber and balance.</li>
+   <li>Remove state-specific logic from the Account class.</li>
+   <li>Introduce a reference to the current AccountState object.</li>
+   <li>Delegate actions like deposit, withdraw, activate, suspend, and close to the current state object through its corresponding methods.</li>
  
 Logic:
 
